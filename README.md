@@ -1,4 +1,4 @@
-# PIC32CXBZ2_WBZ45x ZIGBEE MULTISENSOR DEMO
+# PIC32CXBZ2_WBZ45x THREAD TEMPERATURE SENSOR DEMO
 
 <img src="Docs/IoT-Made-Easy-Logo.png" width=100>
 
@@ -31,9 +31,9 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This application enables the users to create a Full Thread Device. Thread Temperature sensor reports temperature and humidity values to the gateway with the use of Temp&Hum 13 click. The Gateway prints the reported data onto the console.
+This application enables the users to create a Minimal Thread Device. Thread Temperature sensor reports temperature and humidity values to the gateway with the use of Temp&Hum 13 click. The Gateway prints the reported data onto the console.
 
-![](Docs/Hardware_Setup.PNG)
+![](Docs/Hardware_setup.png)
 
 | Tip | Go through the [overview](https://onlinedocs.microchip.com/oxy/GUID-2DB248AF-C243-496D-9819-969E43CA63BC-en-US-1/GUID-162D7BE7-3A35-4D12-AE09-EE84C6554377.html) for understanding few key Thread protocol concepts |
 | :- | :- |

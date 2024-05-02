@@ -58,6 +58,12 @@
 #include "thread_demo.h"
 #include "app_tempHum13/app_temphum13.h"
 
+//#include "openthread/udp.h"
+//#include "openthread/message.h"
+//#include "openthread/ip6.h"
+//#include "openthread/instance.h"
+//#include "openthread/error.h"
+//#include "openthread/thread.h"
 // *****************************************************************************
 // *****************************************************************************
 // Section: Global Data Definitions

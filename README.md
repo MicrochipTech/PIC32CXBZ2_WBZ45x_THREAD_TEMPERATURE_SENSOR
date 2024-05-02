@@ -31,7 +31,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This application enables the users to create a Minimal Thread Device. Thread Temperature sensor reports temperature and humidity values to the gateway with the use of Temp&Hum 13 click. The Gateway prints the reported data onto the console.
+This application enables the users to create a Minimal Thread Device. Thread Temperature sensor reports temperature value to the Thread Compatible gateway with the use of Temp&Hum 13 click. The Gateway prints the reported temperature data onto the console.
 
 ![](Docs/Hardware_setup.png)
 
@@ -48,6 +48,8 @@ This application enables the users to create a Minimal Thread Device. Thread Tem
 ## 3. Hardware Setup<a name="step3">
 
 Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity board.
+
+![](Docs/Hardware_setup.png)
 
 ## 4. Software Setup<a name="step4">
 
@@ -87,7 +89,7 @@ Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity 
 
 **Step 3** - The "MCC - Harmony Project Graph" below depicts the harmony components utilized in this project.
 
-![](Docs/Project_graph.PNG)
+![](Docs/Project_graph.png)
 
 - In Device resources, go to Harmony->Peripherals->SERCOM and select SERCOM2. The SERCOM2 I2C configuration is depicted as follows.
 
@@ -126,7 +128,7 @@ Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity 
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
 
-- Copy the "app.c", "app.h", "thread_demo.c", "thread_demo.h", "udp_demo.c" and "udp_demo.h" folder, which can be found by navigating to the following path: "...firmware\src"
+- Copy the "app.c", "app.h" and "thread_demo.h" folder, which can be found by navigating to the following path: "...firmware\src"
 - Paste the folder under source files in your project folder (...\firmware\src).
 
 **Step 7** - Clean and build the project. To run the project, select "Make and program device" button.
@@ -146,3 +148,5 @@ Follow the steps provided in the link to [Build and program the application](htt
 ## 7. Run the demo<a name="step7">
 
 - Once the gateway device is powered on the Temperature sensor will join the network. The temperature will get reported periodically to the Gateway. Once the Thermostat HVAC joins the network the Gateway device sends the HVAC address and now the Temperature sensor will start reporting the sensor values to the HVAC device.
+
+![](Docs/Output.png)

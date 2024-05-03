@@ -112,14 +112,14 @@ Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity 
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
 
-- Copy the "app_temphum13" folder, which can be found by navigating to the following path: "...firmware\src"
+- Copy the "app_temphum13" folder, "Thread_demo.c" and "Thread_demo.h" files, which can be found by navigating to the following path: "...firmware\src"
 - Paste the folder under source files in your project folder (...\firmware\src).
 
 **Step 7** - Add the files in MPLAB X IDE to your project by following the steps mentioned below.
 
 - In Projects section, right click on Source files to add the ".c" file and Header files to add the ".h" file.
-- Select "Add existing items from folder".
-- Select Add and browse the location of "app_temphum13" folder (...\firmware\src). 
+- Select "Add existing items from folder"/"Add existing files".
+- Select Add and browse the location of the mentioned files(...\firmware\src). 
 - Make sure the "Files of type" is "C Source files" while adding ".c" files and "Header files" while adding ".h" files.
 - Select the folder and click "add".
 
@@ -128,7 +128,7 @@ Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity 
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
 
-- Copy the "app.c", "app.h" and "thread_demo.h" folder, which can be found by navigating to the following path: "...firmware\src"
+- Copy the "app.c" and "app.h" folder, which can be found by navigating to the following path: "...firmware\src"
 - Paste the folder under source files in your project folder (...\firmware\src).
 
 **Step 7** - Clean and build the project. To run the project, select "Make and program device" button.

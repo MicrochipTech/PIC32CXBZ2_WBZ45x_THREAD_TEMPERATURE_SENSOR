@@ -6,7 +6,7 @@
 > "IoT Made Easy!" 
 
 Devices: **| PIC32CXBZ2 | WBZ45x |**<br>
-Features: **| ZIGBEE |**
+Features: **| THREAD |**
 
 
 ## ⚠ Disclaimer
@@ -49,7 +49,6 @@ This application enables the users to create a Minimal Thread Device. Thread Tem
 
 Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity board.
 
-![](Docs/Hardware_setup.png)
 
 ## 4. Software Setup<a name="step4">
 
@@ -123,7 +122,7 @@ Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity 
 - Make sure the "Files of type" is "C Source files" while adding ".c" files and "Header files" while adding ".h" files.
 - Select the folder and click "add".
 
-**Step 6** - Copy the mentioned files from this repository by navigating to the location mentioned below and paste it your project folder. 
+**Step 8** - Copy the mentioned files from this repository by navigating to the location mentioned below and paste it your project folder. 
 
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
@@ -131,7 +130,7 @@ Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity 
 - Copy the "app.c" and "app.h" folder, which can be found by navigating to the following path: "...firmware\src"
 - Paste the folder under source files in your project folder (...\firmware\src).
 
-**Step 7** - Clean and build the project. To run the project, select "Make and program device" button.
+**Step 9** - Clean and build the project. To run the project, select "Make and program device" button.
 
 ## 6. Board Programming<a name="step6">
 

@@ -31,7 +31,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This application enables the users to create a Minimal Thread Device. Thread Temperature sensor reports temperature value to the Thread Compatible gateway with the use of Temp&Hum 13 click. The Gateway prints the reported temperature data onto the console.
+This application enables the users to create a Full Thread Device. Thread Temperature sensor reports temperature value to the Thread Compatible gateway with the use of Temp&Hum 13 click. The Gateway prints the reported temperature data onto the console.
 
 ![](Docs/Hardware_setup.png)
 
@@ -54,10 +54,10 @@ Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity 
 
 - [MPLAB X IDE ](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide#tabs)
 
-    - Version: 6.00
-	- XC32 Compiler v4.10
-	- MPLAB® Code Configurator v5.1.17
-	- PIC32CX-BZ_DFP v1.0.107
+    - Version: 6.20
+	- XC32 Compiler v4.35
+	- MPLAB® Code Configurator v5.5.0
+	- PIC32CX-BZ_DFP v1.2.230
 	- MCC Harmony
 	  - csp version: v3.18.0
 	  - core version: v3.13.1
@@ -98,8 +98,6 @@ Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity 
 
 ![](Docs/System_configuration.PNG)
 
-- In FreeRTOS configuration options, go to RTOS Configurations->Include components and make sure xTaskAbortDelay is selected.
-
 **Step 4** - [Generate](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.
  
 **Step 5** - In "app_user_edits.c", make sure the below code line is commented 
@@ -117,7 +115,7 @@ Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity 
 **Step 7** - Add the files in MPLAB X IDE to your project by following the steps mentioned below.
 
 - In Projects section, right click on Source files to add the ".c" file and Header files to add the ".h" file.
-- Select "Add existing items from folder"/"Add existing files".
+- Select "Add existing items from folder"/"Add existing item".
 - Select Add and browse the location of the mentioned files(...\firmware\src). 
 - Make sure the "Files of type" is "C Source files" while adding ".c" files and "Header files" while adding ".h" files.
 - Select the folder and click "add".

@@ -116,7 +116,7 @@ Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity 
 
 ![](Docs/Sercom0.png)
 
-![](Docs/Sercom0_configuration.png)
+![](Docs/Sercom0_configuration.PNG)
 
 - In Device resources, go to Harmony->Peripherals->SERCOM and select SERCOM2. The SERCOM2 I2C configuration is depicted as follows.
 

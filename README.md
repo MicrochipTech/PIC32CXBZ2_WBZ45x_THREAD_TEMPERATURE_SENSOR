@@ -31,7 +31,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This application enables the users to create a Full Thread Device. Thread Temperature sensor reports temperature value to the Thread Compatible gateway with the use of Temp&Hum 13 click. The Gateway prints the reported temperature data onto the console.
+This application enables the users to create a Full Thread Device. Thread Temperature sensor reports temperature value to the [Thread co-processor device](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_THREAD_co-processor) with the use of Temp&Hum 13 click. The Thread co-processor device prints the reported temperature data onto the console.
 
 ![](Docs/Hardware_setup.png)
 
@@ -110,13 +110,13 @@ Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity 
 
 ![](Docs/Console.png)
 
-![](Docs/Console_COnfig.png)
+![](Docs/Console_Config.png)
 
 - Right Click on UART of CONSOLE and add SERCOM0 as below. Ensure the configurations.
 
 ![](Docs/Sercom0.png)
 
-![](Docs/Sercom0_Config.png)
+![](Docs/Sercom0_configuration.png)
 
 - In Device resources, go to Harmony->Peripherals->SERCOM and select SERCOM2. The SERCOM2 I2C configuration is depicted as follows.
 
@@ -172,6 +172,6 @@ Follow the steps provided in the link to [Build and program the application](htt
 
 ## 7. Run the demo<a name="step7">
 
-- Once the gateway device is powered on the Temperature sensor will join the network. The temperature will get reported periodically to the Gateway. Once the Thermostat HVAC joins the network the Gateway device sends the HVAC address and now the Temperature sensor will start reporting the sensor values to the HVAC device.
+- Once the [Thread co-processor device](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_THREAD_co-processor) is powered on the Temperature sensor will join the network. The temperature will get reported periodically to the Thread co-processor device. Once the Thermostat HVAC joins the network the Thread co-processor device sends the HVAC address and now the Temperature sensor will start reporting the sensor values to the HVAC device.
 
 ![](Docs/Output.png)

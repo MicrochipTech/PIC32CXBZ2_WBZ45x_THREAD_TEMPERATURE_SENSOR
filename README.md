@@ -90,6 +90,34 @@ Connect the Temp&Hum 13 click onto the Mikro bus header of the WBZ451 Curiosity 
 
 ![](Docs/Project_graph.png)
 
+- From Device Resources, go to Libraries->Harmony->Board Support Packages and add WBZ451 Curiosity BSP.
+ 
+- From Device Resources, go to Libraries->Harmony->Wireless->Drivers->Thread and add Thread Stack. Click "Yes" on all the Pop-ups to add the link the dependencies.
+
+- Ensure the configuration of Thread Stack is as below.
+
+![](Docs/Thread_Config.png)
+
+- Ensure the configuration of FreeRTOS is as below. Total heap size should be 61440.
+
+![](Docs/RTOS_Config.png)
+
+- From Device Resources, go to Libraries->Harmony->System Services and add COMMAND. Ensure the below configuration.
+
+![](Docs/Command_Config.png)
+
+- Right Click on SYS_CONSOLE of COMMAND and add CONSOLE as below. Ensure the configurations.
+
+![](Docs/Console.png)
+
+![](Docs/Console_COnfig.png)
+
+- Right Click on UART of CONSOLE and add SERCOM0 as below. Ensure the configurations.
+
+![](Docs/Sercom0.png)
+
+![](Docs/Sercom0_Config.png)
+
 - In Device resources, go to Harmony->Peripherals->SERCOM and select SERCOM2. The SERCOM2 I2C configuration is depicted as follows.
 
 ![](Docs/Sercom2_configuration.PNG)

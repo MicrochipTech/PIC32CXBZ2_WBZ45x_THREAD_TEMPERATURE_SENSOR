@@ -198,6 +198,10 @@ void threadConfigNwParameters()
     otThreadSetRouterSelectionJitter(instance, 5);
     appMsg.msgId = APP_MSG_OT_NWK_START_EVT;
     OSAL_QUEUE_Send(&appData.appQueue, &appMsg, 0);
+
+    PibValue_t value;
+    value.pib_value_64bit = 0x03;
+    PHY_PibSet(phyCCAMode,&value);
 }
 
 void threadNwStart()
